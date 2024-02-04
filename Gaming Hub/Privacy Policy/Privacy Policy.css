@@ -1,0 +1,13 @@
+ul.return {
+    list-style-type: none;
+}
+
+.return li {
+    text-align: left;
+    position: relative;
+    left: -0px;
+    padding: 5px;
+    margin: 5px;
+    display: block;
+    text-decoration: default;
+}
