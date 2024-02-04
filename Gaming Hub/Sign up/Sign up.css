@@ -1,0 +1,372 @@
+body {
+    background-color: #080710;
+}
+
+.background {
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+
+.background .shape {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.shape:nth-child(1) {
+    background: linear-gradient(#1845ad,
+            #23a2f6);
+    left: -80px;
+}
+
+.shape:nth-child(2) {
+    background: linear-gradient(to right,
+            #ff512f,
+            #f09819);
+    right: -30px;
+    bottom: -180px;
+}
+
+.shape:nth-child(3) {
+    background: linear-gradient(to right,
+            #ffe1db,
+            #f01964);
+    bottom: -680px;
+}
+
+.info {
+    position: relative;
+    bottom: 540px;
+    width: 650px;
+    height: 600px;
+    right: 100px;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    border-radius: 20px;
+}
+
+.info p {
+    position: relative;
+    left: 5px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#Sign_up {
+
+    height: 1000px;
+    margin-bottom: -400px;
+    margin-top: -70px;
+    color: white;
+}
+
+#Sign_up_content {
+    position: relative;
+    left: 550px;
+    top: 110px;
+    text-align: center;
+    height: 1550px;
+    width: 450px;
+    border-radius: 10px;
+    border: solid rgba(107, 107, 107, 0.35) 1px;
+}
+
+#Sign_up_content h1 {
+    position: relative;
+    top: 40px;
+}
+
+#Sign_up_content #AHAA {
+    position: relative;
+    top: 110px;
+    left: 52px;
+}
+
+#Sign_up_content #F_LNameREQ {
+    position: relative;
+    top: 60px;
+    left: 10px;
+}
+
+#Sign_up_content #FNamePH {
+    position: relative;
+    top: 70px;
+    right: 125px;
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 30px 0 0;
+}
+
+#Sign_up_content #FName {
+    position: relative;
+    top: 72px;
+    right: -2px;
+    height: 30px;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    margin: 6px 0;
+    padding: 14px;
+}
+
+#Sign_up_content #LNamePH {
+    position: relative;
+    top: 70px;
+    right: 125px;
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 30px 0 0;
+}
+
+#Sign_up_content #LName {
+    position: relative;
+    top: 72px;
+    right: -8px;
+    height: 30px;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    margin: 6px 0;
+    padding: 14px;
+}
+
+#Sign_up_content #male {
+    position: relative;
+    right: 120px;
+    bottom: 10px;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    margin: 6px 0;
+    padding: 14px;
+}
+
+#Sign_up_content #female {
+    position: relative;
+    bottom: 10px;
+    left: 60px;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    margin: 6px 0;
+    padding: 14px;
+}
+
+#Sign_up_content #MalePH {
+    position: relative;
+    top: 60px;
+    right: 100px;
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 30px 0 0;
+}
+
+#Sign_up_content #FemalePH {
+    position: relative;
+    top: 10px;
+    left: 105px;
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 30px 0 0;
+}
+
+#Sign_up_content #BDMYPH {
+    position: relative;
+    right: 150px;
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 30px 0 0;
+}
+
+#Sign_up_content #BDMY {
+    position: relative;
+    top: 2px;
+    right: -8px;
+    height: 30px;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    margin: 6px 0;
+    padding: 14px;
+    font-size: larger;
+}
+
+#Sign_up_content #AgeREQ {
+    position: relative;
+    top: -10px;
+    right: 55px;
+}
+
+#Sign_up_content #phone {
+    position: relative;
+    top: 00px;
+    right: -2px;
+    height: 30px;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    margin: 6px 0;
+    padding: 14px;
+}
+
+#Sign_up_content #PhoneNUMPH {
+    position: relative;
+    top: 00px;
+    right: 110px;
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 30px 0 0;
+}
+
+#Sign_up_content #email {
+    position: relative;
+    top: 10px;
+    right: -2px;
+    height: 30px;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    margin: 6px 0;
+    padding: 14px;
+}
+
+#Sign_up_content #EmailPH {
+    position: relative;
+    top: 10px;
+    right: 140px;
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 30px 0 0;
+}
+
+#Sign_up_content #password {
+    position: relative;
+    bottom: 480px;
+    left: 105px;
+    height: 30px;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    margin: 6px 0;
+    padding: 14px;
+}
+
+#Sign_up_content #passwordCONFIRM {
+    position: relative;
+    bottom: 420px;
+    left: 105px;
+    height: 30px;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    margin: 6px 0;
+    padding: 14px;
+}
+
+#Sign_up_content #PasswordPH {
+    position: relative;
+    top: 18px;
+    right: 126px;
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 30px 0 0;
+}
+
+#Sign_up_content #PasswordCONFIRMPH {
+    position: relative;
+    top: 85px;
+    right: 78px;
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 30px 0 0;
+}
+
+#Sign_up_content #SIGNUP {
+    position: relative;
+    bottom: 220px;
+    height: 50px;
+    width: 150px;
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    background-color: #05a1a8;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 2px;
+}
+
+#Sign_up_content #SIGNUP:hover {
+    transition: 0.5s;
+    background-color: #037278;
+    cursor: pointer;
+}
+
+#Sign_up_content #requirements {
+    line-height: 0;
+    position: relative;
+    right: 100px;
+}
+
+#Sign_up_content #PolicyNTerms {
+    position: relative;
+    bottom: 220px;
+    line-height: 20px;
+}
+
+@media (max-width:1118px) {
+    #Sign_up_content {
+        left: 300px;
+        width: 500px;
+    }
+
+    #Sign_up_content #F_LNameREQ {
+        left: 30px;
+    }
+
+    #Sign_up_content #AgeREQ {
+        left: -40px;
+    }
+
+    #Sign_up_content #OneNumValid,
+    #CharNumValid,
+    #SpecialCharValid {
+        left: 10px;
+    }
+
+    #Sign_up_content #LowercaseValid {
+        left: 15px;
+    }
+}
+
+@media (max-width:944px) {
+    #Sign_up_content {
+        left: 190px;
+    }
+}
+
+@media (max-width:860px) {
+    #Sign_up_content {
+        left: 150px;
+    }
+}

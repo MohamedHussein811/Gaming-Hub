@@ -1,0 +1,247 @@
+body {
+    background-color: #080710;
+}
+
+.background {
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+
+.background .shape {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.shape:first-child {
+    background: linear-gradient(#ecb5ff,
+            #45014e);
+    left: -80px;
+}
+
+.shape:last-child {
+    background: linear-gradient(to right,
+            #ff512f,
+            #f0b319);
+    right: -30px;
+    bottom: -180px;
+}
+
+.error {
+    position: relative;
+    top: 50px;
+    background-color: #F2DEDE;
+    /*color: #A94442;*/
+    color: black;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+}
+
+#map {
+    position: relative;
+    top: 100px;
+    left: 750px;
+    width: 600px;
+    height: 550px;
+}
+
+.info {
+    position: relative;
+    bottom: 540px;
+    width: 650px;
+    height: 600px;
+    right: 100px;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    border-radius: 20px;
+}
+
+.info p {
+    position: relative;
+    left: 5px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#Sign_in {
+
+    height: 1000px;
+    margin-bottom: -100px;
+    color: white;
+
+}
+
+#Sign_in_content {
+    position: relative;
+    left: 550px;
+    top: 50px;
+    text-align: center;
+    height: 600px;
+    width: 450px;
+    border-radius: 10px;
+    border: solid rgba(107, 107, 107, 0.35) 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    z-index: 0;
+}
+
+#Sign_in_content::before {
+    content: '';
+    z-index: -2;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    position: absolute;
+    width: 99999px;
+    height: 99999px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    /*border color, change middle color*/
+    background-image: conic-gradient(rgba(0, 0, 0, 0), #9819ed, rgba(0, 0, 0, 0) 25%);
+    /* change speed here */
+    animation: rotate 4s linear infinite;
+
+}
+
+#Sign_in_content::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    /* border width */
+    left: 5px;
+    top: 5px;
+    /* double the px from the border width left */
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    /*bg color*/
+    background: #212121;
+    /*box border radius*/
+    border-radius: 7px;
+    overflow: hidden;
+    /* Glow Blur */
+    filter: blur(2px);
+}
+
+@keyframes rotate {
+    100% {
+        transform: translate(-50%, -50%) rotate(1turn);
+    }
+}
+
+#Sign_in_content h1 {
+    position: relative;
+    top: 40px;
+}
+
+#Sign_in_content #email {
+    position: relative;
+    top: 35px;
+    right: -2px;
+    height: 30px;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    margin: 6px 0;
+    padding: 14px;
+}
+
+#Sign_in_content #EmailPH {
+    position: relative;
+    top: 70px;
+    right: 140px;
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 30px 0 0;
+}
+
+#Sign_in_content #NAA {
+    position: relative;
+    top: 45px;
+    left: 78px;
+}
+
+#Sign_in_content #password {
+    position: relative;
+    bottom: 22px;
+    right: -2px;
+    height: 30px;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    margin: 6px 0;
+    padding: 14px;
+}
+
+#Sign_in_content #PasswordPH {
+    position: relative;
+    bottom: 20px;
+    right: 126px;
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 30px 0 0;
+}
+
+#Sign_in_content #ResetPassword {
+    position: relative;
+    text-align: center;
+    left: 20px;
+    bottom: 80px;
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 30px 0 0;
+    color: #05a1a8;
+}
+
+#Sign_in_content #login {
+    position: relative;
+    bottom: 20px;
+    left: 65px;
+    height: 50px;
+    width: 150px;
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    background-color: #05a1a8;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 2px;
+}
+
+#Sign_in_content #login:hover {
+    transition: 0.5s;
+    background-color: #037278;
+    cursor: grab;
+}
+
+@media (max-width:1118px) {
+    #Sign_in_content {
+        left: 300px;
+        top: -200px;
+        margin-top: 500px;
+
+    }
+}
+
+@media (max-width:944px) {
+    #Sign_in_content {
+        left: 190px;
+    }
+}
+
+@media (max-width:860px) {
+    #Sign_in_content {
+        left: 150px;
+    }
+}

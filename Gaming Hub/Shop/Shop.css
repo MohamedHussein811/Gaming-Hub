@@ -1,0 +1,669 @@
+body {
+    background: #0d0e1b;
+}
+
+button {
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+/*Shop.php*/
+/*Search Engine*/
+#wrapper {
+    margin: 0 auto;
+    padding: 0px;
+    text-align: center;
+    width: 995px;
+}
+
+#wrapper h1 {
+    margin-top: 50px;
+    font-size: 45px;
+    color: #585858;
+}
+
+#wrapper h1 p {
+    font-size: 18px;
+}
+
+#search_box input[type="text"] {
+    width: 500px;
+    background-color: rgba(0, 132, 255, 0.25);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#search_box input[type="submit"] {
+    text-indent: -999px;
+    position: relative;
+    right: 50px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: url(SearchIcon.png) no-repeat 0px 0px;
+    background-size: cover;
+    cursor: pointer;
+
+}
+
+/*Sort By*/
+.SortSelector {
+    position: relative;
+    bottom: 50px;
+    padding: 5px;
+    margin-left: 20px;
+    color: #fff;
+    background-color: rgba(0, 132, 255, 0.25);
+    display: flex;
+    width: 20em;
+    height: 3em;
+    border-radius: 20px;
+}
+
+.SortOption {
+    background-color: #333;
+    border-radius: 10px;
+}
+
+.SortSelectordiv input[type="submit"] {
+    position: relative;
+    bottom: 30px;
+    text-transform: uppercase;
+    background-color: rgba(0, 132, 255, 0.25);
+    color: white;
+    padding: 15px;
+    margin-left: 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    text-decoration: none;
+    letter-spacing: 3px;
+    background: #0085ff40;
+    text-transform: uppercase;
+
+}
+
+.SortSelectordiv input[type="submit"]:hover {
+    box-shadow: 0 0 0 0 #0085ff40;
+    transition: 0.5s;
+    animation: Sortbyglow 1.4s linear infinite;
+    transform: translate(0px, -2px);
+
+}
+
+@keyframes Sortbyglow {
+    0% {
+        box-shadow: 0 0 0 0 #0085ff40;
+    }
+
+    50% {
+        box-shadow: 0 0 30px 0 #0085ff40;
+    }
+}
+
+/*Upload Product*/
+.UploadProduct {
+    position: relative;
+    bottom: 100px;
+    left: 76%;
+    background-color: rgba(0, 132, 255, 0.25);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    width: 200px;
+    text-decoration: none;
+    letter-spacing: 3px;
+    background: #dc143c;
+    text-transform: uppercase;
+    box-shadow: 0 0 0 0 #dc143c;
+    animation: glow 1.4s linear infinite;
+}
+
+.UploadProduct:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transition: 0.5s;
+    background-color: rgba(255, 0, 0, 0.85);
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 0 0 #dc143c;
+    }
+
+    50% {
+        box-shadow: 0 0 30px 0 #dc143c;
+    }
+}
+
+/*Shop*/
+.ShopContent {
+    display: inline;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.ShopColumns {
+    position: relative;
+    margin: 5px;
+    margin-left: 60px;
+    width: 300px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.25);
+    transition: 0.4s;
+    background: rgba(64, 71, 167, 0.1);
+}
+
+.ShopColumns:hover {
+    box-shadow: 0 3px 6px rgba(255, 255, 255, 0.16), 0 3px 6px rgba(225, 217, 217, 0.23);
+    transform: translate(0px, -8px);
+    cursor: grab;
+}
+
+.images {
+
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+.pqty {
+    position: relative;
+    left: 5px;
+    bottom: 2px;
+    width: 50px;
+    height: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.addtocart {
+    background-color: rgba(0, 0, 0, 0.25);
+    color: rgb(255, 255, 255);
+    font-family: Nunito;
+    width: 100%;
+}
+
+.addtocart:hover {
+    background-color: rgba(255, 0, 0, 0.7);
+    transition: 0.5s;
+}
+
+.PageContainer {
+    padding-top: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 100px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.25);
+    transition: 0.4s;
+    background: rgba(64, 71, 167, 0.1);
+}
+
+.PageContainer:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.Pages {
+    position: relative;
+    left: 200px;
+    margin-right: 10px;
+    padding-top: 10px;
+    width: 50px;
+    height: 40px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    box-shadow: -1px -1px 5px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
+}
+
+.Pages:active {
+    color: black;
+}
+
+.fa-shopping-cart {
+    position: relative;
+    left: 68%;
+    top: 50px;
+    font-size: 48px;
+    color: #0883ff5e;
+}
+
+#cart-item {
+    position: relative;
+    left: 1005px;
+    font-size: 20px;
+    text-decoration: none;
+    color: red;
+    border: solid 2px;
+    border-radius: 20px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+/*PDetails*/
+.productDetails {
+    width: 1000px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.25);
+    transition: 0.4s;
+    background: #f2f2f2;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.productDetails img {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.productDetails p {
+    font-family: "Poppins", sans-serif;
+    color: rgba(0, 0, 0, 0.8);
+
+}
+
+/*cart.php*/
+.TableHead th {
+    color: gray;
+}
+
+.TableCart .TableHead th {
+    border-collapse: collapse;
+    border-bottom: 1px solid #bbb;
+}
+
+.TableHead td {
+    font-size: 22px;
+    font-weight: 550;
+    padding: 10px 0;
+    padding-left: 20px;
+}
+
+.TableHead td img {
+    width: 250px;
+    height: 200px;
+}
+
+.TableHead {
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.TableBody .TPrice {
+    position: relative;
+    right: 150px;
+}
+
+.TableBody .TQty {
+    position: relative;
+    right: 120px;
+}
+
+.TableBody .TTot {
+    position: relative;
+    right: 140px;
+}
+
+.TableBody .PRmv {
+    position: relative;
+    right: 110px;
+}
+
+.ContShop a {
+    position: relative;
+    left: 1070px;
+    bottom: 86px;
+    color: black;
+    border: 1px solid;
+    padding: 25px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.Payment .checkoutbtn {
+    position: relative;
+    width: 200px;
+    left: 600px;
+    bottom: 92px;
+    color: white;
+    background-color: #010e49;
+    border: 1px solid;
+    padding: 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 100;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.TableCart .ClearCart a {
+    color: red;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.Payment {
+    background-color: #010e49;
+    width: 500px;
+    border-radius: 10px;
+    padding: 20px;
+    height: 100px;
+}
+
+.COD {
+    position: relative;
+    right: 200px;
+    width: 100%;
+    height: 2em;
+}
+
+.PH1 {
+    position: relative;
+    left: 80px;
+    bottom: 30px;
+    font-size: 22px;
+    color: white;
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.PH2 {
+    position: relative;
+    left: 80px;
+    bottom: 55px;
+    font-size: 22px;
+    color: white;
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+/*checkout(COD)*/
+.MyProducts {
+    background: rgba(0, 0, 0, 0.9);
+    margin: auto;
+    width: 400px;
+    padding: 10px;
+    position: relative;
+    left: 510px;
+    bottom: 650px;
+    height: 80vh;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.25);
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.MyProducts:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transform: translate(0px, -4px);
+}
+
+.UserInfo {
+    text-align: center;
+    width: 450px;
+    border-radius: 10px;
+    border: solid rgba(107, 107, 107, 0.35) 1px;
+    padding-bottom: 20px;
+    margin-left: 40px;
+    position: relative;
+    top: 30px;
+}
+
+.UserInputs {
+    height: 50px;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    margin: 6px 0;
+    padding: 14px;
+}
+
+.PlaceOrderbtn {
+    color: white;
+    width: 300px;
+    background-color: #010e49;
+    border: 1px solid;
+    padding: 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 100;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+
+
+.dropbtn {
+    position: relative;
+    left: 460px;
+    bottom: 10px;
+    background-color: #05a1a8;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-top-left-radius: 10px;
+    width: 150px;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: #05a1a8;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    position: relative;
+    left: 460px;
+    display: none;
+    background-color: #f1f1f1;
+    min-width: 100px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+
+@media (max-width:1518px) {
+    #Search {
+        left: 254px;
+    }
+
+    .dropbtn {
+        left: 190px;
+    }
+
+    .dropdown-content {
+        left: 190px;
+    }
+
+    .fa-shopping-cart {
+        left: 890px;
+    }
+
+    #cart-item {
+        left: 860px;
+    }
+
+    .ShopColumns {
+        margin-right: 50px;
+        margin-left: 150px;
+    }
+}
+
+@media (max-width:1118px) {
+    .TableCart {
+        width: 1095px;
+    }
+
+    .PageContainer {
+        height: 200px;
+        position: relative;
+        left: 70px;
+    }
+
+    .Pages {
+        margin-bottom: 20px;
+        left: 10px;
+    }
+
+    .MyProducts {
+        left: 340px;
+        width: 500px;
+        bottom: 650px;
+    }
+
+    .ContShop a {
+        left: 550px;
+        bottom: 110px;
+    }
+
+    #Search {
+        left: 257px;
+        top: 50px;
+    }
+
+    .Payment .checkoutbtn {
+        left: 600px;
+        bottom: 115px;
+
+    }
+
+    .ShopColumns {
+        margin-right: -50px;
+        margin-left: 150px;
+    }
+}
+
+@media (max-width:860px) {
+    .MyProducts {
+        left: 250px;
+        width: 300px;
+        bottom: 650px;
+    }
+
+    .PageContainer {
+        height: 250px;
+    }
+
+    .fa-trash-alt {
+        position: relative;
+        left: 50px;
+    }
+
+    .TableBody .TPrice {
+        right: 90px;
+    }
+
+    .TableBody .TQty {
+
+        right: 100px;
+    }
+
+    .TableBody .TTot {
+
+        right: 90px;
+        word-spacing: 0px;
+    }
+
+    .TableHead td img {
+        position: relative;
+        right: 20px;
+    }
+
+    .TableHead .PName {
+        position: relative;
+        right: 20px;
+    }
+
+    #Search {
+        left: 160px;
+        top: -25px;
+        width: 200px;
+        border-radius: 20px;
+    }
+
+    .dropbtn {
+        left: 0;
+        top: -85px;
+        border-radius: 20px;
+    }
+
+    .dropdown-content {
+        left: 0;
+        top: -85px;
+    }
+
+    .ShopColumns {
+
+        margin-left: -15px;
+        width: 500px;
+    }
+
+    .fa-shopping-cart {
+        left: 100%;
+        top: -60px;
+
+    }
+
+    #cart-item {
+        left: 100%;
+        top: -80px;
+    }
+}
